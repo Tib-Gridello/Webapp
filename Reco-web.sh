@@ -28,7 +28,7 @@ Reconnaissance () {
         nmap -sV -A -p- $ip_target -oA $Full_path/nmap-output 
 }
 
-#Save some variable for easyness
+#Save some variable 
 Base_path=~/Desktop
 Folder_name=$(basename $1)
 Full_path=${Base_path}/${Folder_name}
