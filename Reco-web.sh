@@ -24,7 +24,7 @@ Reconnaissance () {
         #Get IP from URL
         ip_target=$(host $arg2 | awk '/has address/ { print $4 ; exit }')
 
-        #nmap on IP. Careful with the flags :)
+        #nmap on IP. Careful with the flags :) -- Could have nmap on URL but not fun
         nmap -sV -A -p- $ip_target -oA $Full_path/nmap-output 
 }
 
