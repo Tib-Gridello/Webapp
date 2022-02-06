@@ -1,1 +1,0 @@
-ffuf -u https://open.spotify.com/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-large-directories.txt -recursion -e .bak, .zip, .bak, .sql, .zip, .xml, .old, .inc, .js, .json, .conf, .cfg, .log, .yml, .yaml, .txt, .sql, .rar, .bak-ac, .aspx, .php -recursion-depth 2 -replay-proxy http://127.0.0.1:8080 -c
